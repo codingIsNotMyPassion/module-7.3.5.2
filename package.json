@@ -1,39 +1,28 @@
 {
-  "name": "06-jobs-api",
+  "name": "url-shortner-backend",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
+    "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
-    "dotenv": "^10.0.0",
-    "express": "^4.17.1",
-    "express-async-errors": "^3.1.1",
-    "express-rate-limit": "^5.3.0",
-    "helmet": "^4.6.0",
-    "http-status-codes": "^2.1.4",
-    "joi": "^17.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "joi": "^17.6.0",
+    "joi-password-complexity": "^5.1.0",
     "jsonwebtoken": "^8.5.1",
-    "jwt-decode": "^3.1.2",
-    "mailgun.js": "^4.1.6",
-    "mongoose": "^5.13.2",
+    "mongoose": "^6.2.4",
     "nodemailer": "^6.7.2",
-    "nodemailer-sendgrid-transport": "^0.2.0",
-    "rate-limiter": "^0.2.0",
+    "nodemon": "^2.0.15",
     "shortid": "^2.2.16",
-    "swagger-ui-express": "^4.1.6",
-    "xss-clean": "^0.1.1",
-    "yamljs": "^0.3.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.9"
-  },
-  "engines": {
-    "node": "16.x"
+    "valid-url": "^1.0.9"
   }
 }
